@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="top|center_horizontal"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:elevation="20dp"
+        android:translationZ="20dp"
+
+        card_view:cardUseCompatPadding="true"
+        android:layout_height="100dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:src="@drawable/free_now"
+                android:layout_height="150dp"></ImageView>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/user"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="20dp"
+        app:civ_border_color="@color/colorPrimaryDark"
+        app:civ_border_width="1dp"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="10"
+        android:layout_gravity="right"
+        app:civ_shadow_color="@color/colorPrimaryDark"/>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:elevation="20dp"
+        android:translationZ="20dp"
+
+        card_view:cardUseCompatPadding="true"
+        android:layout_height="180dp">
+        <LinearLayout
+            android:padding="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+
+                android:padding="5dp"
+                android:text="Hi Denis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/do_you_wan_to_see_the_vehicles_as_on_a_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+            <Button
+
+                android:textAllCaps="true"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/view_as_list"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_width="match_parent"
+                android:id="@+id/viewAsListBtn"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"></Button>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

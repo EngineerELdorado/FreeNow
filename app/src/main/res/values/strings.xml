@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">FreeNow</string>
+    <string name="title_activity_maps" tools:ignore="ExtraTranslation">FreeNow</string>
+    <string name="view_as_list">View the list of vehicles</string>
+    <string name="action_settings">Settings</string>
+    <string name="TEXT_ID">ID:</string>
+    <string name="TEXT_TYPE">Type:</string>
+
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="do_you_wan_to_see_the_vehicles_as_on_a_list">Do you want to see all the vehicles on a list?</string>
+    <string name="drag_to_see_more">Drag the map to see more vehicles</string>
+    <string name="hambug">HAMBUG CITY</string>
+</resources>
